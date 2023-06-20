@@ -1,0 +1,5 @@
+for _,v in ipairs(game.Workspace:GetChildren()) do
+   if v:IsA("Tool") or v:IsA("HopperBin") then
+      v:Clone().Parent = game.Players.LocalPlayer.Backpack
+   end
+end
